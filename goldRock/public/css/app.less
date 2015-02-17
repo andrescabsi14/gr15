@@ -1,0 +1,264 @@
+@white:    #fff;
+
+body{
+  background: @white;
+}
+
+
+
+@charset "utf-8";
+/* CSS Document */
+
+/*Ctrl + cmd + u + f*/
+/*CSS Document
+***********************************/
+
+section{
+    display: inline-block;
+    float: left;
+}
+
+#main_wrapper{
+    display: flex;
+    width: 100%;
+}
+#inner_nav{
+    width: 270px;
+    height: 100%;
+	position: fixed;
+	margin: 0 2% 0 0;
+    background: #4c535f; /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzRjNTM1ZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxZjI4MzciIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  #4c535f 0%, #1f2837 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4c535f), color-stop(100%,#1f2837)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #4c535f 0%,#1f2837 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #4c535f 0%,#1f2837 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #4c535f 0%,#1f2837 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #4c535f 0%,#1f2837 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c535f', endColorstr='#1f2837',GradientType=0 ); /* IE6-8 */
+    -webkit-box-shadow: 2px 0px 8px 0px rgba(50, 50, 50, 0.71);
+	-moz-box-shadow:    2px 0px 8px 0px rgba(50, 50, 50, 0.71);
+	box-shadow:         2px 0px 8px 0px rgba(50, 50, 50, 0.71);
+}
+    #inner_nav nav{
+        
+    }
+
+        #inner_nav nav #logo{
+            height: 30px;
+            float: left;
+            width: 100%;
+            display: inline-block;
+            margin: 15px 0;
+            padding-bottom: 14px;
+            border-bottom: solid 3px #444B57;
+        }
+        #inner_nav nav #logo i{
+            float: left;
+            width: 20px;
+            height: 20px;
+            color: white;
+            font-size: 1.4rem;
+            margin: 0 12px 0 0;
+            display: inline-block;
+            position: absolute;
+            left: 90px;
+            top: 17px;
+        }
+
+        #inner_nav nav #logo .title{
+            float: left;
+            color: white;
+            font-size: 1.5rem;
+            display: block;
+            text-align: center;
+            width: 100%;
+            padding-left: 20px;
+        }
+        #inner_nav nav ul{
+            list-style: none;
+            float: left;
+            display: block;
+            width: 100%;
+        }
+            #inner_nav nav ul li{
+                float: left;
+                width: 100%;
+                padding: 0;
+                position: relative;
+            }
+			#inner_nav nav ul li:hover ul{
+    			display: block;
+			}
+                #inner_nav nav ul li a{
+                	color: #c9ced6;
+                    float: left;
+                    height: 100%;
+                    width: 100%;
+                    display: block;
+                    box-sizing: border-box;
+                    font-size: 0.9rem;
+                	font-weight: 600;
+                    padding: 9px 25px;
+                }
+                #inner_nav nav ul li:before{
+                    content: "s";
+                    font-family: 'bulletsregular';
+                    font-size: 14px;
+                    left: initial;
+                    right: 5px;
+                    top: 10px;
+                    position: absolute;
+                    opacity: 0;
+                }
+				#inner_nav nav ul li ul li:hover:before,
+				#inner_nav nav ul li ul li.active{
+    				content: "s";
+                    font-family: 'bulletsregular';
+                    font-size: 14px;
+                    left: 27px;
+                    right: initial;
+                    top: 10px;
+                    position: absolute;
+				}
+				#inner_nav nav ul li ul{
+    				background: white;
+    				margin-top: 0;
+				}
+				#inner_nav nav ul li ul li a{
+    				padding-left: 40px;
+				}
+				#inner_nav nav ul li ul li a{
+    				color: #202938;
+				}
+				#inner_nav nav ul li ul li:hover a{
+    				color: white;
+				}
+                #inner_nav nav ul li:hover:before,
+                #inner_nav nav ul li.active:before{
+                    opacity: 1;
+                    color: #697383;
+                }
+                #inner_nav nav ul li a:hover,
+                #inner_nav nav ul li.active a
+                {
+                	background: #202938;
+                    -moz-box-shadow: inset 0 0 10px #182234;
+                    -webkit-box-shadow: inset 0 0 10px #182234;
+                    box-shadow: inset 0 0 10px #182234;
+                }
+
+                #inner_nav nav ul li a:hover ul{
+                    display: block;
+                }
+                #inner_nav nav ul li > ul{
+                    display: none;
+                }
+
+
+#inner_nav nav #profile{
+    display: block;
+    float: left;
+    text-align: center;
+    width: 100%;
+    height: 200px;
+    position: relative;
+    margin-bottom: 5%;
+}
+
+#inner_nav nav #profile figure{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    left: 0;
+    right: 0;
+    border: solid 3px #696F7B;
+    overflow: hidden;
+    margin: 0 auto;
+    display: block;
+    background: url('http://www.realtimearts.net/data/images/art/46/4640_profile_nilssonpolias.jpg') no-repeat 50% 50%;
+    background-size: cover;
+}
+#inner_nav nav #profile figure img{
+    display: none;
+}
+
+#inner_nav nav #profile figure figcaption{
+    position: absolute;
+    bottom: 3px;
+    width: 100%;
+    left: 0;
+}
+#inner_nav nav #profile figure figcaption a{
+    color: white;
+}
+#inner_nav nav #profile figure figcaption .logout{
+    color: white;
+    font-size: 0.8rem;
+    line-height: 7px;
+    cursor: pointer;
+}
+
+#main_Content{
+    flex: 1;
+    padding-left: 300px;
+    float: : left;
+}
+
+#main_Content header{
+    padding: 0 15px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    float: left;
+    height: 60px;
+    background: white;
+    width: 100%;
+    margin-left: -30px;
+    text-align: right;
+}
+#main_Content .dashboard1{
+    float: left;
+    width: 50%;
+    overflow: hidden;
+    padding: 30px;
+    background: white;
+    margin: 20px 0;
+}
+#main_Content .messages,
+#main_Content .task,
+#main_Content .logout,
+#main_Content .news,
+#main_Content .profile{
+    width: 36px;
+    height: 36px;
+    display: inline-block;
+    margin: 10px 0 0 10px;
+}
+#main_Content .messages a,
+#main_Content .task a,
+#main_Content .logout a,
+#main_Content .news a,
+#main_Content .profile a{
+    border-radius: 50%;
+    background: #E7E7E7;
+    width: 36px;
+    text-align: center;
+    height: 36px;
+    display: inline-block;
+}
+#main_Content .messages:hover a,
+#main_Content .task:hover a,
+#main_Content .logout:hover a,
+#main_Content .news:hover a,
+#main_Content .profile:hover a{
+    background: #333;
+    color: white;
+}
+#main_Content .messages a i,
+#main_Content .task a i,
+#main_Content .logout a i,
+#main_Content .news a i,
+#main_Content .profile a i{
+	padding: 10px 0 0 0;
+}
+
